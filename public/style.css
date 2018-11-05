@@ -1,0 +1,623 @@
+﻿body {
+
+
+	background: #ededed;
+
+
+}
+
+
+@font-face {
+    font-family: "circular-pro";
+    src: url(font/circular-pro.ttf) format("truetype");
+}
+
+
+.headerSection {
+
+
+	height: 550px;
+	width: 100%;
+	background-image: url("img/bkgr2.png");
+	/*background-color: #3498db;*/
+	background-size: cover;
+	background-repeat: no-repeat;
+
+
+}
+
+.header {
+
+	height: 45px;
+	background-color:  rgba(0,0,0,0.4);
+	z-index: 100;
+	position: fixed;
+
+
+}
+
+.header h2 {
+
+	color: #fff;
+	font-size: 17px;
+	font-family: 'montserrat' ;
+	margin-top: 15px;
+
+
+}
+
+.header h1 {
+
+	font-family: 'righteous';
+	color: #fff;
+	font-size: 22px;
+	text-align: center;
+	margin-top: 45px;
+	
+
+
+}
+
+
+
+.hamburger {
+
+	width: 35px;
+    height: 5px;
+    background-color: #fff;
+    margin: 6px 0;
+
+}
+
+.hamburgerIcon {
+
+
+	margin-top: 30px;
+	cursor: pointer;
+
+}
+
+.jumboMessage {
+
+	margin-top: 105px;
+
+	text-align: center;
+	font-family: 'circular-pro';
+
+
+}
+
+.jumboMessage h1 {
+
+
+	font-size: 45px;
+	color: #fff;
+
+}
+
+.jumboMessage h2 {
+
+
+	font-size: 25px;
+	color: #fff;
+	margin-top: 60px;
+	display: inline;
+	background-image: url('img/checkmark_small.png');
+	background-repeat: no-repeat;
+	background-size: 30px;
+	margin-right: 20px;
+	padding-left:35px;  /* width of the image plus a little extra padding */
+	padding-bottom: 40px;
+	
+
+}
+
+.jumboMessage img {
+
+	width: 80px;
+	height: auto;
+	position: absolute;
+	top: -40;
+	left: 46%;
+
+}
+
+.jumboMessageInfo {
+
+	padding-top: 145px;
+
+}
+
+.jumboSlider {
+
+
+	height: 200px;
+	background-color: rgba(0, 0, 0, 0.4);
+	/*border-radius: 5px;*/
+	margin-top: 40px;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+.jumboSlide {
+
+	margin-left: 35px;
+
+}
+
+.logo1 img {
+
+	width: 200px;
+	height: auto;
+	margin-top: 45px;
+	margin-left: 20px;
+
+
+}
+
+.logo2 img {
+
+	width: 200px;
+	height: auto;
+	margin-top: 15px;
+	margin-left: 20px;
+
+
+}
+
+
+.logo3 img {
+
+	width: 170px;
+	height: auto;
+	margin-top: 15px;
+	margin-left: 20px;
+
+
+}
+
+
+.stars img {
+
+	width: 190px;
+	height: auto;
+	margin-left: 25px;
+	margin-top: -20px;
+
+
+}
+
+.casinoInfo {
+
+	margin-top: 35px;
+	margin-left: 90px;
+
+}
+
+.casinoInfo h1 {
+
+	margin-top: 5px;
+	color: #fff;
+	font-size: 19px ;
+
+}
+
+.bonus {
+
+	/*background-image: url('img/coinIcon.png');
+	background-repeat: no-repeat;
+	background-size: 25px;
+	padding-left: 45px;  
+	padding-bottom: 20px;
+	background-origin: content-box;
+*/
+
+}
+
+.icon {
+
+	position: absolute;
+	width: 20px;
+	height: auto;
+	top: 8;
+	left: -15;
+
+
+}
+
+.coftIcon {
+
+	position: absolute;
+	width: 55px;
+	height: auto;
+	top: 8;
+	left: 30;
+	z-index: 99;
+	
+	
+
+
+}
+
+.casinoButtons {
+
+
+	margin-top: 10px;
+
+}
+
+
+.playNowButton, .reviewButton {
+
+
+
+	
+	background-color:#f1c40f;
+	/*-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;*/
+	border: none;
+	display:inline-block;
+	cursor:pointer;
+	color:#000;
+	font-family:Arial;
+	font-size:17px;
+	font-weight:bold;
+	/*padding:11px 78px;*/
+	width: 200px;
+	height: 40px;
+	text-decoration: none;
+	margin-left: 20px;
+	transition: 0.4s;
+}
+
+.playNowButton {
+
+	margin-top: 40px;
+
+
+}
+
+.reviewButton {
+
+	margin-top: 20px;
+
+}
+
+.reviewButton:hover,  .playNowButton:hover {
+
+	background-color: #b28f00;
+
+}
+
+/*.playNowButton:hover {
+	background-color:#e5b700;
+	
+}*/
+
+.readReview {
+
+	font-size: 25px;
+	color: white;
+	text-decoration: none;
+	margin-left: 30px;
+
+
+}
+
+.readReview:hover {
+
+	color: #0c1322;
+
+}
+
+.middleSection {
+
+	/*height: 350px;*/
+	background-color: #fff;
+	margin-top: 20px;
+	
+
+
+}
+
+.casinoOfTheMonth {
+
+	/*height: 500px;*/	
+	background-image: url("img/bkgr.png");
+	
+
+}
+
+.coftHeadline {
+
+	background-color: #161d2b;
+	text-align: center;
+	/*height: 10%;*/
+	color: #fff;
+
+}
+
+.coftHeadline h1 {
+
+
+	font-size: 18px;
+	margin-top: 10px;
+
+}
+
+.coftLogo {
+
+	/*height: 25%;*/
+	/*background-color: #e5e5e5;*/
+/*	background: repeating-linear-gradient(
+  45deg,
+  #161d2b,
+  #2d3340 10px,
+  #161d2b 10px,
+  #161d2b 20px
+);
+*/
+
+
+}
+
+.coftLogo img {
+
+	margin-left: 50px;
+	width: 250px;
+	height: auto;
+	margin-bottom: -30px;
+	margin-top: -30px;
+
+
+}
+
+
+
+.coftText {
+
+	/*height: 39%;*/
+	/*background-color: #e5e5e5;*/
+	padding-left: 70px;
+	/*padding-top: 20px;*/
+	margin-bottom: 20px;
+
+}
+
+.coftText h1 {
+
+	margin-top: 5px;
+	color: #fff;
+	font-size: 19px ;
+
+}
+
+.coftButtons {
+
+	/*height: 20%;	*/
+	/*background-color: #e5e5e5;*/
+
+
+}
+
+/*.middleTextHeadline {
+
+
+	background-color: #161d2b;
+		height: 38px;
+
+}*/
+
+.middleTextText {
+
+
+	font-family: 'montserrat';
+	color: #0c1322;
+	padding-top: 20px;
+	padding-left: 20px;
+	padding-right: 40px;
+
+}
+
+
+.middleTextText h3 {
+
+	font-size: 21px;
+
+	
+	
+}
+
+.middleTextText p {
+
+	font-size: 15px;
+	line-height: 26px;
+	
+}
+
+
+.casinoFilterBy {
+
+	margin-top: 40px;
+	margin-bottom: 40px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border-top: 1px lightgrey solid;
+	border-bottom: 1px lightgrey solid;
+
+
+}
+
+.filterButton {
+
+	margin-left: 70px;
+	border-style: none;
+	padding: 10px 10px 10px 10px;
+	text-align: center;
+	background-color: #fff;
+	border-radius: 50%;
+	cursor: pointer;
+	transition: 0.4s;
+
+}
+
+.filterButton img {
+
+	width: 30px;
+	height: 30px;
+
+}
+
+.activeFilter {
+
+	background-color: #161d2b;
+	color: #fff;
+
+
+}
+
+.filterButton:hover {
+
+	background-color: #2d3340;
+	color: #fff;
+
+
+}
+
+.casinoList {
+
+
+	/*background-color: #fff;*/
+	/*border-top: 1px solid lightgrey;*/
+}
+
+.casinoItem {
+
+	height: 140px;
+	/*padding-top: 10px;*/
+	/*padding-bottom: 10px;*/
+	background-color: #fff;
+	margin-top: 5px;
+	/*margin-bottom: 5px;*/
+	/*border-top: 1px solid lightgrey;
+	border-left: 1px solid lightgrey;
+	border-right: 1px solid lightgrey;*/
+
+}
+
+.casinoItem:nth-child(1) {
+
+
+	margin-top: 10px;
+
+
+}
+
+
+.itemLogo {
+
+	/*background-color: #2ecc71;*/
+	height: 140px;
+	padding-bottom: 120px;
+	border-right: 1px solid lightgrey;
+
+}
+
+.itemLogoLogo {
+
+	height: 70px;
+	padding-bottom: 20px;
+
+
+}
+
+.itemLogoLogo img {
+
+
+
+}
+
+.itemLogoStars {
+
+
+	height: 70px;
+
+}
+
+.itemLogoStars img {
+
+	width: 120px;
+	margin-left: 55px;
+	margin-top: 5px;
+
+
+
+}
+
+.listItemPerks {
+
+	margin-top: 35px;
+	margin-left: 90px;
+	margin-top: 5px;
+	
+
+}
+
+.listPerks h1 {
+
+
+	color: 000;
+	font-size: 15px ;
+}
+
+
+
+.casinoItem:nth-child(even) {
+
+
+	background-color: #fbfbfb;
+
+}
+
+.menuDesk {
+
+	list-style: none;
+	text-align: center;
+
+
+}
+
+.menuDeskItem {
+
+	margin-left: 15px;
+	margin-right: 15px;
+	display: inline-block;
+	margin-top: 10px;
+	color: #fff;
+
+
+}
+
+.mainLogo img {
+
+	width: 280px;
+	left: 38%;
+	margin-bottom: 20px;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
