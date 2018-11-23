@@ -4,9 +4,23 @@ var router = express.Router();
 
 router.get('/', function(req, res, next){
 
-	return res.render('index');
-	
+	return res.render('index', {
 
+		casinos: [
+
+			{
+
+				name: 'Omnia Casino'
+
+
+			}
+
+
+
+		]
+
+
+	});
 });
 
 

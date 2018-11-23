@@ -2,6 +2,7 @@
 
 
 	background: #ededed;
+	font-family: 'Roboto', sans-serif;
 
 
 }
@@ -16,7 +17,7 @@
 .headerSection {
 
 
-	height: 550px;
+	height: 350px;
 	width: 100%;
 	background-image: url("img/bkgr2.png");
 	/*background-color: #3498db;*/
@@ -29,9 +30,9 @@
 .header {
 
 	height: 45px;
-	background-color:  rgba(0,0,0,0.4);
+	background-color:  rgba(0,0,0,0.3);
 	z-index: 100;
-	position: fixed;
+	
 
 
 }
@@ -79,10 +80,10 @@
 
 .jumboMessage {
 
-	margin-top: 105px;
+	margin-top: 65px;
 
 	text-align: center;
-	font-family: 'circular-pro';
+	font-family: 'Roboto', sans-serif;
 
 
 }
@@ -117,7 +118,7 @@
 	width: 80px;
 	height: auto;
 	position: absolute;
-	top: -40;
+	top: -30;
 	left: 46%;
 
 }
@@ -215,16 +216,7 @@
 
 }
 
-.icon {
 
-	position: absolute;
-	width: 20px;
-	height: auto;
-	top: 8;
-	left: -15;
-
-
-}
 
 .coftIcon {
 
@@ -316,7 +308,8 @@
 
 	/*height: 350px;*/
 	background-color: #fff;
-	margin-top: 20px;
+	margin-top: -60px;
+	border-radius: 5px;
 	
 
 
@@ -438,148 +431,6 @@
 }
 
 
-.casinoFilterBy {
-
-	margin-top: 40px;
-	margin-bottom: 40px;
-	padding-top: 20px;
-	padding-bottom: 20px;
-	border-top: 1px lightgrey solid;
-	border-bottom: 1px lightgrey solid;
-
-
-}
-
-.filterButton {
-
-	margin-left: 70px;
-	border-style: none;
-	padding: 10px 10px 10px 10px;
-	text-align: center;
-	background-color: #fff;
-	border-radius: 50%;
-	cursor: pointer;
-	transition: 0.4s;
-
-}
-
-.filterButton img {
-
-	width: 30px;
-	height: 30px;
-
-}
-
-.activeFilter {
-
-	background-color: #161d2b;
-	color: #fff;
-
-
-}
-
-.filterButton:hover {
-
-	background-color: #2d3340;
-	color: #fff;
-
-
-}
-
-.casinoList {
-
-
-	/*background-color: #fff;*/
-	/*border-top: 1px solid lightgrey;*/
-}
-
-.casinoItem {
-
-	height: 140px;
-	/*padding-top: 10px;*/
-	/*padding-bottom: 10px;*/
-	background-color: #fff;
-	margin-top: 5px;
-	/*margin-bottom: 5px;*/
-	/*border-top: 1px solid lightgrey;
-	border-left: 1px solid lightgrey;
-	border-right: 1px solid lightgrey;*/
-
-}
-
-.casinoItem:nth-child(1) {
-
-
-	margin-top: 10px;
-
-
-}
-
-
-.itemLogo {
-
-	/*background-color: #2ecc71;*/
-	height: 140px;
-	padding-bottom: 120px;
-	border-right: 1px solid lightgrey;
-
-}
-
-.itemLogoLogo {
-
-	height: 70px;
-	padding-bottom: 20px;
-
-
-}
-
-.itemLogoLogo img {
-
-
-
-}
-
-.itemLogoStars {
-
-
-	height: 70px;
-
-}
-
-.itemLogoStars img {
-
-	width: 120px;
-	margin-left: 55px;
-	margin-top: 5px;
-
-
-
-}
-
-.listItemPerks {
-
-	margin-top: 35px;
-	margin-left: 90px;
-	margin-top: 5px;
-	
-
-}
-
-.listPerks h1 {
-
-
-	color: 000;
-	font-size: 15px ;
-}
-
-
-
-.casinoItem:nth-child(even) {
-
-
-	background-color: #fbfbfb;
-
-}
 
 .menuDesk {
 
@@ -611,10 +462,190 @@
 
 
 
+.casinoListItem {
+
+	margin-top: 10px;
+	min-height: 100px;
+	background-color: #fff;
+	border-radius: 3px;
 
 
 
 
+}
+
+.listLogo {
+
+	margin-left: -15px;
+
+
+
+
+}
+
+.listLogo img {
+	width: 100%;
+	height: 100px;
+	border-top-left-radius: 3px;
+	border-bottom-left-radius: 3px;
+
+}
+
+.playButton {
+
+	border: none;
+	height: 50px;
+	width: 230px;
+	margin-top: 25px;
+	border-radius: 5px;
+	background-color: #f1c40f;
+	box-shadow: 0 3px #f39c12;
+	font-family: 'Ubuntu', sans-serif;
+	color: #fff;
+	font-size: 19px;
+	cursor: pointer;
+	transition: 0.3s;
+	
+	
+
+}
+
+.playButton:hover {
+
+
+background-color: #f3cf3e;
+
+}
+
+.button {
+
+	text-align: center;
+
+
+}
+
+.fa-star {
+
+
+	color: #f1c40f;
+
+}
+
+
+.stars {
+
+	padding-left: 50px;
+	padding-top: 10px;
+}
+
+.stars h2 {
+
+	font-size: 22px;
+
+}
+
+.icon {
+
+	color: #2ecc71;
+	font-size: 19px;
+	margin-top: 4px;
+	margin-right: 7px;
+
+}
+
+.info {
+
+	padding-top: 10px;
+	padding-left: 50px;
+
+}
+
+.info span {
+
+	font-size: 17px;
+
+}
+
+.fa-bolt {
+
+	color: #f1c40f;
+	/*font-size: 17px;*/
+	
+}
+
+.fa-sync-alt {
+
+	color: #e74c3c;
+	/*font-size: 17px;*/
+
+
+}
+
+.casinoListInfo {
+
+
+	background-color: #fff;
+	margin-top: 10px;
+	padding-left: 15px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+
+
+}
+
+.casinoListInfo h2 {
+
+
+	/*margin-left: -20px;*/
+	/*padding-left: -15px;*/
+	padding-top: 9px;
+	padding-bottom: 3px;
+
+	font-size: 18px;
+	color: darkgrey;
+
+}
+
+.infoRating {
+
+	padding-left: 50px;
+
+
+}
+
+.infoInfo {
+
+
+	padding-left: 50px;
+
+}
+
+.middleSpotlight {
+
+	padding-top: 20px;
+	padding-left: 50px;
+
+
+}
+
+.middleSpotlight img {
+
+
+	height: 220px;
+    width: auto\9; /* ie8 */
+    /*margin-left: 50px;*/
+    margin-right: auto;
+    margin-top: 5px;
+    border-radius: 5px;
+
+}
+
+.middleSpotlight h2 {
+
+
+	font-size: 20px;
+
+}
 
 
 
