@@ -406,7 +406,7 @@
 
 	/*height: 350px;*/
 	background-color: #fff;
-	/*margin-top: -70px;*/
+	margin-top: -70px;
 	border-radius: 5px;
 	
 
@@ -1028,6 +1028,22 @@ margin-top: 20px;
 	margin-top: 5px;
 
 	}
+
+
+	.middleSection {
+
+	margin-top: 0px;
+	border-radius: 0px;
+	
+
+
+}
+
+.headerSection {
+
+	display: none;
+
+}
 
 
 
