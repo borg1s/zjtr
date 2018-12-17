@@ -3,7 +3,9 @@
 <% include partials/header %>
 </head>
 <body>
-<div class="headerSection col-12">
+
+<!-- <div class="headerSection col-12">
+	
 	<div class="row">
 		<div class="header col-12">
 			<div class="container">
@@ -18,12 +20,14 @@
 			</div>
 		</div>
 
+
+
 		<div class="jumboMessage col-12">
 			<div class="container">
 				<div class="row">
 					<div class="col-12 mainLogo">
 						<img src="img/logobfr2.png">
-						<!-- <img src="img/logobfr.png"/> -->
+						<img src="img/logobfr.png"/>
 					</div>
 					
 					
@@ -31,19 +35,23 @@
 			</div>
 		</div>
 		
-	</div>
+	</div> -->
 		<div class="container">	
 			<div class="middleSection col-12">
 				<div class="row">
-					<div class="middleText col-7">
+					<div class="middleText col-xl-7 col-lg-12 col-md-12 col-sm-12 col-xs-12">
 						<div class="row">
 							<div class="col-12 middleTextText">
-								<h3><i class="far fa-bookmark" style="margin-right: 10px"></i>VÄLKOMMEN TILL CASINOZAJTER.SE</h3>
+								<h3>VÄLKOMMEN TILL CASINOZAJTER.SE.</h3>
 								<p>Lorem ipsum dolor amet pabst la croix mumblecore knausgaard butcher listicle enamel pin small batch anim food truck. Glossier semiotics voluptate street art kickstarter hell of ullamco adipisicing ut polaroid pitchfork. Celiac pinterest franzen street art, raclette selfies salvia banjo thundercats. Gochujang chicharrones dolore, consequat kogi kinfolk typewriter velit paleo. Typewriter listicle et air plant, 3 wolf moon elit eiusmod vexillologist occupy. Glossier semiotics voluptate street art kickstarter hell of ullamco adipisicing ut polaroid pitchfork. Gochujang chicharrones dolore, consequat kogi kinfolk typewriter velit paleo. Typewriter listicle et air plant, 3 wolf moon elit eiusmod vexillologist occupy. Glossier semiotics voluptate street art kickstarter hell of ullamco adipisicing ut polaroid pitchfork.</p>
+							</div>
+							<div class="MiddleTextTextMobile">
+								<h3>VÄLKOMMEN TILL CASINOZAJTER.SE.</h3>
+								<p>Lorem ipsum dolor amet pabst la croix mumblecore knausgaard butcher listicle enamel pin small batch anim food truck. Glossier semiotics voluptate street art kickstarter hell of ullamco adipisicing ut polaroid pitchfork...</p>
 							</div>
 						</div>
 					</div>
-					<div class ="middleSpotlight col-5">
+					<div class ="middleSpotlight col-xl-5 col-lg-5 col-md-12 col-sm-12">
 						<div class="slider">
 							<div class="slide">
 								<img src="img/dreamzb2.png">
@@ -57,6 +65,19 @@
 						</div>
 					</div>
 					
+				</div>
+			</div>
+			<div class="sliderMobile">
+				<div class="slider">
+					<div class="slide">
+						<img src="img/dreamzb2.png">
+					</div>
+					<div class="slide">
+						<img src="img/thrillsb600.gif">
+					</div>
+					<div class="slide">
+						<img src="img/prontob.gif">
+					</div>
 				</div>
 			</div>
 		</div>
@@ -78,11 +99,12 @@
 </div>
 		
 <div class="container casinoList">
-		<div class="casinoListItem col-12">
+		
+		<!-- <div class="casinoListItem col-12">
 			<div class="row">
 				<div class="col-2">
-					<div class="listLogo">
-						<img src="img/omnia4.png">
+					<div class="listLogo" style="background-color: #000;">
+						<img src="img/logo/omnia2.png">
 					</div>
 				</div>
 				<div class="col-2 stars">
@@ -101,138 +123,109 @@
 					<button class="playButton">TILL OMNIA<i class="fas fa-external-link-alt" style="margin-left: 5px; margin-bottom: 5px; font-size: 15px;"></i></button>
 				</div>
 			</div>
-		</div>
+		</div> -->
+	<div class="cld">
+		<% for (var c in casinos) { %>
+			<% if (casinos.hasOwnProperty(c)) { %>
 
-		<div class="casinoListItem col-12">
-			<div class="row">
-				<div class="col-2">
-					<div class="listLogo">
-						<img src="img/dreamz.png">
+			<div class="casinoListItem col-12">
+				<div class="row">
+					<div class="col-xl-2 col-lg-2 col-md-3 col-sm-3 col-xs-3">
+						<div class="listLogo" style="background-color: <%= casinos[c].bgC %>; border-radius: 5px;">
+							<a href="#">
+								<img src="<%= casinos[c].imgURL %>">
+							</a>
+						</div>
 					</div>
-				</div>
-				<div class="col-2 stars">
-					<h2>Dreamz</h2>
-					<i class="fas fa-star"></i><i class="fas fa-star" ></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><span style="font-size: 20px; font-weight: bold;"> 9.7</span>
+					<div class="col-2 stars">
+						<h2><%= casinos[c].name %></h2>
+						<% for (var i = 0; i < casinos[c].fullStars; i++) {%>
+						<i class="fas fa-star"></i>
+						<% } %>
+						<% for (var i = 0; i < casinos[c].halfStars; i++) {%>
+						<i class="fas fa-star-half"></i>
+						<% } %>
 
-				</div>
-				<div class="col-5 info">
-					<i class="fas fa-check icon"></i><span>200% bonus upp till 1000kr</span><br>
-					<i class="fas fa-check icon"></i><span>Insättning direkt med BANK-ID</span><br>
-					<i class="fas fa-check icon"></i><span>Vinster är skattefria och finns på kontot på 5 minuter</span><br>
+
+
+					</div>
+					<div class="col-xl-5 col-lg-5 col-md-6 col-sm-6 col-xs-6 info">
+						<i class="<%= casinos[c].infoType1 %> icon"></i><span><%= casinos[c].info1 %></span><br>
+						<i class="<%= casinos[c].infoType2 %> icon"></i><span><%= casinos[c].info2 %></span><br>
+						<i class="<%= casinos[c].infoType3 %> icon"></i><span><%= casinos[c].info3 %></span><br>
+
+						<% if(casinos[c].top3 === true) {%>
+						<div class="ribbon">
+							<img src="<%= casinos[c].ribbon %>">
+						</div>
+						<% } %>
+						
+					</div>
+					<div class="col-3 button">
+					<a href="#">
+						<button class="playButton"><%= casinos[c].btnTxt %><i class="fas fa-external-link-alt" style="margin-left: 5px; margin-bottom: 5px; font-size: 15px;"></i></button>
+					</a>
+					</div>
 					
-
-				</div>
-				<div class="col-3 button">
-					<button class="playButton">TILL DREAMZ<i class="fas fa-external-link-alt" style="margin-left: 5px; margin-bottom: 5px; font-size: 15px;"></i></button>
 				</div>
 			</div>
-		</div>
-
-		<div class="casinoListItem col-12">
-			<div class="row">
-				<div class="col-2">
-					<div class="listLogo">
-						<img src="img/spela.png">
-					</div>
-				</div>
-				<div class="col-2 stars">
-					<h2>Spela Casino</h2>
-					<i class="fas fa-star"></i><i class="fas fa-star" ></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><span style="font-size: 20px; font-weight: bold;"> 9.6</span>
-
-				</div>
-				<div class="col-5 info">
-					<i class="fas fa-check icon"></i><span>Stort utbud av spel</span><br>
-					<i class="fas fa-check icon"></i><span>Skattefria vinster på ditt konto inom 5 minuter</span><br>
-					<i class="fas fa-check icon"></i><span>Nytt och fräscht casino</span><br>
-					
-
-				</div>
-				<div class="col-3 button">
-					<button class="playButton">TILL SPELA<i class="fas fa-external-link-alt" style="margin-left: 5px; margin-bottom: 5px; font-size: 15px;"></i></button>
-				</div>
-			</div>
-		</div>
-
-		<div class="casinoListItem col-12">
-			<div class="row">
-				<div class="col-2">
-					<div class="listLogo">
-						<img src="img/nyspins.png">
-					</div>
-				</div>
-				<div class="col-2 stars">
-					<h2>NY Spins</h2>
-					<i class="fas fa-star"></i><i class="fas fa-star" ></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><span style="font-size: 20px; font-weight: bold;"> 9.3</span>
-
-				</div>
-				<div class="col-5 info">
-					<i class="fas fa-bolt icon"></i><span>Upp till 10 000kr i välkomstbonus</span><br>
-					<i class="fas fa-sync-alt icon"></i><span>200 freespins</span><br>
-					<i class="fas fa-check icon"></i><span>Nytt och fräscht casino</span><br>
-					
-
-				</div>
-				<div class="col-3 button">
-					<button class="playButton">TILL NYSPINS<i class="fas fa-external-link-alt" style="margin-left: 5px; margin-bottom: 5px; font-size: 15px;"></i></button>
-				</div>
-			</div>
-		</div>
-
-		<div class="casinoListItem col-12">
-			<div class="row">
-				<div class="col-2">
-					<div class="listLogo">
-						<img src="img/kaboo.png">
-					</div>
-				</div>
-				<div class="col-2 stars">
-					<h2>Kaboo Casino</h2>
-					<i class="fas fa-star"></i><i class="fas fa-star" ></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><span style="font-size: 20px; font-weight: bold;"> 9.3</span>
-
-				</div>
-				<div class="col-5 info">
-					<i class="fas fa-bolt icon"></i><span>200% bonus upp till 1000kr</span><br>
-					<i class="fas fa-check icon"></i><span>Insättning direkt med BANK-ID</span><br>
-					<i class="fas fa-check icon"></i><span>Vinster är skattefria och finns på kontot på 5 minuter</span><br>
-					
-
-				</div>
-				<div class="col-3 button">
-					<button class="playButton">TILL KABOO<i class="fas fa-external-link-alt" style="margin-left: 5px; margin-bottom: 5px; font-size: 15px;"></i></button>
-				</div>
-			</div>
-		</div>
-
-	<!-- <% for (var c in casinos) { %>
-		<% if (casinos.hasOwnProperty(c)) { %>
-
-		<div class="casinoListItem col-12">
-			<div class="row">
-				<div class="col-2">
-					<div class="listLogo">
-						<img src="img/omnia4.png">
-					</div>
-				</div>
-				<div class="col-2 stars">
-					<h2><%= casinos[c].name %></h2>
-					<i class="fas fa-star"></i><i class="fas fa-star" ></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><span style="font-size: 20px; font-weight: bold;"> 9.8</span>
-
-				</div>
-				<div class="col-5 info">
-					<i class="fas fa-check icon"></i><span>Stort utbud av spel</span><br>
-					<i class="fas fa-check icon"></i><span>Skattefria vinster på ditt konto inom 5 minuter</span><br>
-					<i class="fas fa-check icon"></i><span>Nytt och fräscht casino</span><br>
-					
-
-				</div>
-				<div class="col-3 button">
-					<button class="playButton">TILL OMNIA<i class="fas fa-external-link-alt" style="margin-left: 5px; margin-bottom: 5px; font-size: 15px;"></i></button>
-				</div>
-			</div>
-		</div>
+			<% } %>
 		<% } %>
-	<% } %> -->
+	</div>
+</div>
+	<!-- list < 850 -->
+
+<div class="clm container">
+	<% for (var c in casinos) { %>
+		<% if (casinos.hasOwnProperty(c)) { %>
+			<div class="casinoListItemMobile col-12">
+				<div class="row">
+					<div class="mobileLogo col-12" style="background-color: <%= casinos[c].bgC %>;">
+						<img src="<%= casinos[c].imgURL %>">
+					</div>
+					<div class="mobileStars col-12" style="text-align: center;">
+
+						<% for (var i = 0; i < casinos[c].fullStars; i++) {%>
+						<i class="fas fa-star"></i>
+						<% } %>
+						<% for (var i = 0; i < casinos[c].halfStars; i++) {%>
+						<i class="fas fa-star-half"></i>
+						<% } %>
+
+
+						<% if(casinos[c].top3 === true) {%>
+						<div class="ribbon">
+							<img src="<%= casinos[c].ribbon %>">
+						</div>
+						<% } %>
+
+					</div>
+
+					<div class="mobileInfo">
+						<i class="<%= casinos[c].infoType1 %> icon"></i><span><%= casinos[c].info1 %></span><br>
+						<i class="<%= casinos[c].infoType2 %> icon"></i><span><%= casinos[c].info2 %></span><br>
+						<i class="<%= casinos[c].infoType3 %> icon"></i><span><%= casinos[c].info3 %></span><br>
+					</div>
+
+					<!-- <div class="mobileButton col-12"> -->
+
+						<button class="playButtonMobile col-12">
+							<%= casinos[c].btnTxt %><i class="fas fa-external-link-alt" style="margin-left: 5px; margin-bottom: 5px; font-size: 15px;"></i>
+						</button>
+					</div>
+
+				<!-- </div> -->
+			</div>
+
+		<% } %>
+	<% } %>
+</div>
+
+
 	
+
+<div class="footer">
+
 </div>
 
 

@@ -9,10 +9,35 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Candal" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Archivo+Black|Fjalla+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:600" rel="stylesheet">
     <link rel="shortcut icon" type="image/png" href="img/favicon-32x32.png"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
      <link rel="stylesheet" type="text/css" href="slick.css"/>
     <link rel="stylesheet" type="text/css" href="slick-theme.css"/>
     <link href="bootstrap.css" rel="stylesheet"/>
     <link href="style.css" rel="stylesheet"/>
-    <script src="data.js"></script>
+
+    <!-- cookie-consent -->
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
+    <script>
+    window.addEventListener("load", function(){
+    window.cookieconsent.initialise({
+      "palette": {
+        "popup": {
+          "background": "#0d2845"
+        },
+        "button": {
+          "background": "#f1c40f",
+          "text": "#000000"
+        }
+      },
+      "theme": "classic",
+      "content": {
+        "message": "Genom att fortsätta använda våran tjänst accepterar du våran cookie-policy och våra allmänna villkor",
+        "dismiss": "Jag accepterar",
+        "link": "Läs mer här",
+        "href": "#"
+      }
+    })});
+    </script>
