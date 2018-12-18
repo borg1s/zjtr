@@ -3,38 +3,15 @@
 <% include partials/header %>
 </head>
 <body>
-
+<!-- <div class="headerSectionMobile">
+	<img src="img/logobfr4.png">
+</div> -->
 <div class="headerSection col-12">
-	
-	<div class="row">
-		<div class="header col-12">
-			<div class="container">
-					<ul class="menuDesk">
-						<a href="#"><li class="menuDeskItem"><i class="fas fa-align-right" style="margin-right: 10px"></i>ALLA CASINON</li></a>
-						<a href="#"><li class="menuDeskItem"><i class="fas fa-balance-scale" style="margin-right: 10px"></i>ANSVARSFULLT SPELANDE</li></a>
-						<a href="#"><li class="menuDeskItem"><i class="fas fa-info-circle" style="margin-right: 10px"></i>INTEGRITETSPOLICY</li></a>
-
-					</ul>
-					
-				</div>
+		<div class="container">
+			<div class="col-12 mainLogo">
+				<img src="img/logobfr4.png">
 			</div>
 		</div>
-
-
-
-		<div class="jumboMessage col-12">
-			<div class="container">
-				<div class="row">
-					<div class="col-12 mainLogo">
-						<img src="img/logobfr2.png">
-						<img src="img/logobfr.png"/>
-					</div>
-					
-					
-				</div>
-			</div>
-		</div>
-		
 	</div>
 		<div class="container">	
 			<div class="middleSection col-12">
@@ -99,31 +76,6 @@
 </div>
 		
 <div class="container casinoList">
-		
-		<!-- <div class="casinoListItem col-12">
-			<div class="row">
-				<div class="col-2">
-					<div class="listLogo" style="background-color: #000;">
-						<img src="img/logo/omnia2.png">
-					</div>
-				</div>
-				<div class="col-2 stars">
-					<h2>Omnia Casino</h2>
-					<i class="fas fa-star"></i><i class="fas fa-star" ></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><span style="font-size: 20px; font-weight: bold;"> 9.8</span>
-
-				</div>
-				<div class="col-5 info">
-					<i class="fas fa-check icon"></i><span>Stort utbud av spel</span><br>
-					<i class="fas fa-check icon"></i><span>Skattefria vinster på ditt konto inom 5 minuter</span><br>
-					<i class="fas fa-check icon"></i><span>Nytt och fräscht casino</span><br>
-					
-
-				</div>
-				<div class="col-3 button">
-					<button class="playButton">TILL OMNIA<i class="fas fa-external-link-alt" style="margin-left: 5px; margin-bottom: 5px; font-size: 15px;"></i></button>
-				</div>
-			</div>
-		</div> -->
 	<div class="cld">
 		<% for (var c in casinos) { %>
 			<% if (casinos.hasOwnProperty(c)) { %>
@@ -131,7 +83,7 @@
 			<div class="casinoListItem col-12">
 				<div class="row">
 					<div class="col-xl-2 col-lg-2 col-md-3 col-sm-3 col-xs-3">
-						<div class="listLogo" style="background-color: <%= casinos[c].bgC %>; border-radius: 5px;">
+						<div class="listLogo" style="background-color: <%= casinos[c].bgC %>; border-radius: 3px;">
 							<a href="#">
 								<img src="<%= casinos[c].imgURL %>">
 							</a>
@@ -207,14 +159,12 @@
 						<i class="<%= casinos[c].infoType3 %> icon"></i><span><%= casinos[c].info3 %></span><br>
 					</div>
 
-					<!-- <div class="mobileButton col-12"> -->
+				
 
 						<button class="playButtonMobile col-12">
 							<%= casinos[c].btnTxt %><i class="fas fa-external-link-alt" style="margin-left: 5px; margin-bottom: 5px; font-size: 15px;"></i>
 						</button>
 					</div>
-
-				<!-- </div> -->
 			</div>
 
 		<% } %>
