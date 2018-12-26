@@ -12,11 +12,10 @@ router.get('/', function(req, res, next){
 
 			{
 
-				name: 'Omnia Casino',
-				imgURL: 'img/logo/omnia2.png',
-				bgC: '#e83455',
-				tracking: '/go/omnia',
-				rating: '9.8',
+				name: 'Storspiller',
+				imgURL: 'img/logo/storspiller.png',
+				bgC: '#1c1e1c',
+				tracking: '/go/storspiller',
 				fullStars: 5,
 				halfStars: 0,
 				ribbon: 'img/cofticongold.png',
@@ -26,35 +25,34 @@ router.get('/', function(req, res, next){
 				infoType2: 'fas fa-check',
 				infoType3: 'fas fa-check',
 
-				info1: '10% omsättningsfri cashback varje vecka',
-				info2: 'Skattefria vinster på kontot inom 5 minuter',
-				info3: 'Nytt och modernt casino',
+				info1: '3 forskjellige startbonuser å velge i',
+				info2: 'En innskuddsbonus er uten omsetningskrav',
+				info3: 'Få bonus på dine første fire innskudd',
 
-				btnTxt: 'TILL OMNIA'
+				btnTxt: 'TIL STORSPILLER'
 
 
 
 
 			},
-			{
+
+					{
 
 				name: 'Voodoo Dreams',
 				imgURL: 'img/logo/voodoodreams2.png',
-				bgC: '#000520',
+				bgC: '#111d2e',
 				tracking: '/go/voodoodreams',
-				rating: '9.6',
 				fullStars: 5,
 				halfStars: 0,
 				ribbon: 'img/cofticonsilver2.png',
 				top3: true,
-
 				infoType1: 'fas fa-bolt',
 				infoType2: 'fas fa-sync-alt',
 				infoType3: 'fas fa-check',
 
-				info1: 'Upp till 10 000kr i välkomstbonus',
-				info2: '200 freespins på Starburst',
-				info3: 'Insättning med BankID och blixtsnabba uttag',
+				info1: '100% opptil 1000kr på ditt første innskudd',
+				info2: '200 gratisspinn',
+				info3: 'Totalt 10 000kr i innskuddsbonus',
 
 				btnTxt: 'VOODOO DREAMS'
 
@@ -62,96 +60,158 @@ router.get('/', function(req, res, next){
 
 
 			},
-			{
 
-				name: 'Spela Casino',
-				imgURL: 'img/logo/spela2.png',
-				bgC: '#011218',
-				tracking: '/go/spela',
-				rating: '9.5',
+				{
+
+				name: 'Genesis Casino',
+				imgURL: 'img/logo/genesis.png',
+				bgC: '#2d147b',
+				tracking: '/go/genesis',
 				fullStars: 5,
 				halfStars: 0,
 				ribbon: 'img/cofticonbronze2.png',
 				top3: true,
+				
 
-				infoType1: 'fas fa-check',
-				infoType2: 'fas fa-check',
-				infoType3: 'fas fa-check',
-
-				info1: 'Spela direkt utan att registrera ett konto',
-				info2: 'Uttag på fem minuter',
-				info3: 'Stort utbud av spel',
-
-				btnTxt: 'TILL SPELA'
-
-
-
-
-			},
-			{
-
-				name: 'Dreamz Casino',
-				imgURL: 'img/logo/dreamz2.png',
-				bgC: '#6128b2',
-				tracking: '/go/dreamz',
-				rating: '9.4',
-				fullStars: 5,
-				halfStars: 0,
-				infoType1: 'fas fa-check',
-				infoType2: 'fas fa-check',
-				infoType3: 'fas fa-check',
-
-				info1: '200% välkomstbonus upp till 1000kr',
-				info2: 'Insättning med BankID',
-				info3: 'Spelarvänligt UI',
-
-				btnTxt: 'TILL DREAMZ'
-
-
-
-
-			},
-			{
-
-				name: 'Kaboo Casino',
-				imgURL: 'img/logo/kaboo2.png',
-				bgC: '#000',
-				tracking: '/go/kaboo',
-				rating: '9.3',
-				fullStars: 5,
-				halfStars: 0,
 				infoType1: 'fas fa-bolt',
-				infoType2: 'fas fa-check',
+				infoType2: 'fas fa-sync-alt',
+				infoType3: 'fas fa-check',
+				
+
+				info1: 'Første innskudd gir 100% opptil 1000kr',
+				info2: '300 gratisspinn på Starburst',
+				info3: '10 000kr bonus på dine første fire innskudd',
+				
+
+				btnTxt: 'TIL GENESIS'
+
+
+
+
+			},	
+
+			{
+
+				name: 'Vegas Casino',
+				imgURL: 'img/logo/vegascasino.png',
+				bgC: '#31143a',
+				tracking: '/go/vegascasino',
+				fullStars: 5,
+				halfStars: 0,
+				
+
+				infoType1: 'fas fa-bolt',
+				infoType2: 'fas fa-sync-alt',
 				infoType3: 'fas fa-check',
 
-				info1: '200% välkomstbonus upp till 1000kr',
-				info2: 'Insättning med BankID',
-				info3: 'Spelarvänligt UI',
+				info1: '200% opptil 2000kr på ditt første innskudd',
+				info2: '20 gratisspinn på den nye spill Penguin City',
+				info3: 'Alle bonuser er uten omsetningskrav',
 
-				btnTxt: 'TILL KABOO'
+				btnTxt: 'VEGAS CASINO'
 
 
 
 
 			},
+
 			{
 
-				name: 'NY Spins',
+				name: 'Casino Joy',
+				imgURL: 'img/logo/casinojoy.png',
+				bgC: '#3d79b2',
+				tracking: '/go/casinojoy',
+				fullStars: 5,
+				halfStars: 0,
+				
+
+				infoType1: 'fas fa-bolt',
+				infoType2: 'fas fa-sync-alt',
+				infoType3: 'fas fa-check',
+				
+
+				info1: '100% opptil 2000kr på ditt første innskudd',
+				info2: '200 gratisspinn på Starburst',
+				info3: '10 000kr bonus på dine første fire innskudd',
+				
+
+				btnTxt: 'TIL CASINO JOY'
+
+
+
+
+			},
+			// {
+
+			// 	name: 'Casumo',
+			// 	imgURL: 'img/logo/casumo.png',
+			// 	bgC: '#d9e7e8',
+			// 	tracking: '/go/casumo',
+			// 	fullStars: 5,
+			// 	halfStars: 0,
+				
+
+			// 	infoType1: 'fas fa-bolt',
+			// 	infoType2: 'fas fa-sync-alt',
+			// 	infoType3: 'fas fa-check',
+				
+
+			// 	info1: 'Første innskudd gir 200% opptil 500kr',
+			// 	info2: '200 gratisspinn på Starburst',
+			// 	info3: 'Totalt 12000kr i innskuddsbonus',
+				
+
+			// 	btnTxt: 'TIL CASUMO'
+
+
+
+
+			// },
+			
+	
+
+			
+			{
+
+				name: 'NYSpins',
 				imgURL: 'img/logo/nyspins2.png',
 				bgC: '#e1e8eb',
 				tracking: '/go/nyspins',
-				rating: '8.9',
+				fullStars: 5,
+				halfStars: 0,
+				infoType1: 'fas fa-bolt',
+				infoType2: 'fas fa-sync-alt',
+				infoType3: 'fas fa-check',
+				
+
+				info1: '100% opptil 1000kr på ditt første innskudd',
+				info2: 'Totalt 200 gratisspinn',
+				info3: 'Få bonus på dine første fire innskudd',
+				
+
+				btnTxt: 'TIL NYSPINS'
+
+
+
+
+			},
+			{
+
+				name: 'Casino X',
+				imgURL: 'img/logo/casinox.png',
+				bgC: '#1f1f21',
+				tracking: '/go/casinox',
 				fullStars: 4,
 				halfStars: 1,
 				infoType1: 'fas fa-bolt',
 				infoType2: 'fas fa-sync-alt',
 				infoType3: 'fas fa-check',
 
-				info1: 'Välkomstbonus upp till 10 000kr',
-				info2: '200 gratis snurr på Starburst',
-				info3: 'BankID-casino',
+				info1: '200% bonus på ditt første innskudd',
+				info2: '200 gratisspinn etter innskudd på 200kr+ ',
+				info3: 'Både casino og odds',
 
-				btnTxt: 'TILL NY SPINS'
+				btnTxt: 'TIL CASINO X'
 
 
 
@@ -159,45 +219,44 @@ router.get('/', function(req, res, next){
 			},
 			{
 
-				name: 'Thrills Casino',
-				imgURL: 'img/logo/thrills2.png',
-				bgC: '#46a1f9',
-				tracking: '/go/thrills',
-				rating: '8.6',
+				name: 'Dunder',
+				imgURL: 'img/logo/dunder.png',
+				bgC: '#181b23',
+				tracking: '/go/dunder',
 				fullStars: 4,
 				halfStars: 1,
 				infoType1: 'fas fa-bolt',
-				infoType2: 'fas fa-check',
+				infoType2: 'fas fa-sync-alt',
 				infoType3: 'fas fa-check',
 
-				info1: '10% Cashback',
-				info2: 'Erfaret och pålitligt casino',
-				info3: 'Insättning direkt med BankID',
+				info1: '200% opptil 500kr på ditt første innskudd',
+				info2: '200 gratisspinn på Starburst',
+				info3: 'Totalt 6000kr i innskuddsbonus',
 
-				btnTxt: 'TILL THRILLS'
+				btnTxt: 'TIL DUNDER'
 
 
 
 
 			},
+	
 			{
 
-				name: 'Pronto Casino',
-				imgURL: 'img/logo/pronto2.png',
-				bgC: '#006da3',
-				tracking: '/go/pronto',
-				rating: '8.4',
+				name: 'Duelz',
+				imgURL: 'img/logo/duelz.png',
+				bgC: '#174163',
+				tracking: '/go/duelz',
 				fullStars: 4,
 				halfStars: 1,
 				infoType1: 'fas fa-check',
 				infoType2: 'fas fa-check',
 				infoType3: 'fas fa-check',
 
-				info1: 'EU-licenserat casino med skattefria vinster',
-				info2: 'Ganska nytt casino med stort spelutbud',
-				info3: 'Insättning direkt med BankID',
+				info1: 'Innovativt nettcasino',
+				info2: 'spille mot andre',
+				info3: 'Godt spillutvalg',
 
-				btnTxt: 'TILL PRONTO'
+				btnTxt: 'TIL DUELZ'
 
 
 
@@ -214,7 +273,11 @@ router.get('/', function(req, res, next){
 	});
 });
 
+router.get('/privacy-policy', function(req, res, next){
+
+	return res.render('ip');
 
 
+});
 
 module.exports = router;

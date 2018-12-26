@@ -20,7 +20,10 @@ app.set('views', __dirname + '/views')
 
 // include routes
 var routes = require('./routes/index');
+var trackingRoutes = require('./routes/tracking');
 app.use('/', routes);
+app.use('/go/', trackingRoutes);
+
 
 //check HTTPS
 
